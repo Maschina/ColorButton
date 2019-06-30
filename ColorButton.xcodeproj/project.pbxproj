@@ -11,16 +11,48 @@
 		6616B30E22C9515F002F3D4A /* ColorButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 6616B30C22C9515F002F3D4A /* ColorButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6616B31522C9519E002F3D4A /* ColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6616B31422C9519E002F3D4A /* ColorButton.swift */; };
 		6616B31722C95276002F3D4A /* ColorButton.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 6616B31622C95276002F3D4A /* ColorButton.podspec */; };
+		6616B31922C953F9002F3D4A /* ExtensionReactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6616B31822C953F9002F3D4A /* ExtensionReactive.swift */; };
+		6616B31C22C95448002F3D4A /* ExtensionNSBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6616B31B22C95448002F3D4A /* ExtensionNSBezierPath.swift */; };
+		6616B31E22C9546F002F3D4A /* ExtensionNSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6616B31D22C9546F002F3D4A /* ExtensionNSAttributedString.swift */; };
+		6616B32022C954B9002F3D4A /* ColorButtonTextLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6616B31F22C954B9002F3D4A /* ColorButtonTextLayer.swift */; };
+		6616B32322C95627002F3D4A /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 6616B32222C95627002F3D4A /* .swiftlint.yml */; };
+		6616B32622C95647002F3D4A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 6616B32422C95647002F3D4A /* LICENSE */; };
+		6616B32722C95647002F3D4A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6616B32522C95647002F3D4A /* README.md */; };
+		6616B32F22C956EA002F3D4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6616B32E22C956EA002F3D4A /* AppDelegate.swift */; };
+		6616B33122C956EC002F3D4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6616B33022C956EC002F3D4A /* Assets.xcassets */; };
+		6616B33422C956EC002F3D4A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6616B33222C956EC002F3D4A /* MainMenu.xib */; };
+		6616B34022C9599D002F3D4A /* ColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6616B31422C9519E002F3D4A /* ColorButton.swift */; };
+		6616B34122C9599F002F3D4A /* ColorButtonTextLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6616B31F22C954B9002F3D4A /* ColorButtonTextLayer.swift */; };
+		6616B34222C959A3002F3D4A /* ExtensionReactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6616B31822C953F9002F3D4A /* ExtensionReactive.swift */; };
+		6616B34322C959A3002F3D4A /* ExtensionNSBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6616B31B22C95448002F3D4A /* ExtensionNSBezierPath.swift */; };
+		6616B34422C959A3002F3D4A /* ExtensionNSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6616B31D22C9546F002F3D4A /* ExtensionNSAttributedString.swift */; };
+		DCF9A9CC0A875FFD0B1AA63C /* Pods_ColorButton_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F27CBCE1A81F741447A8443 /* Pods_ColorButton_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01315A5ABBE073896004D5C5 /* Pods-ColorButton-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorButton-App.debug.xcconfig"; path = "Target Support Files/Pods-ColorButton-App/Pods-ColorButton-App.debug.xcconfig"; sourceTree = "<group>"; };
 		0364D6E045782A242E98AD29 /* Pods-ColorButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorButton.debug.xcconfig"; path = "Target Support Files/Pods-ColorButton/Pods-ColorButton.debug.xcconfig"; sourceTree = "<group>"; };
+		0F27CBCE1A81F741447A8443 /* Pods_ColorButton_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColorButton_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		287C603A6BD9D35EF1BB082B /* Pods-ColorButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorButton.release.xcconfig"; path = "Target Support Files/Pods-ColorButton/Pods-ColorButton.release.xcconfig"; sourceTree = "<group>"; };
 		6616B30922C9515F002F3D4A /* ColorButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ColorButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6616B30C22C9515F002F3D4A /* ColorButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorButton.h; sourceTree = "<group>"; };
 		6616B30D22C9515F002F3D4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6616B31422C9519E002F3D4A /* ColorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorButton.swift; sourceTree = "<group>"; };
 		6616B31622C95276002F3D4A /* ColorButton.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ColorButton.podspec; sourceTree = SOURCE_ROOT; };
+		6616B31822C953F9002F3D4A /* ExtensionReactive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionReactive.swift; sourceTree = "<group>"; };
+		6616B31B22C95448002F3D4A /* ExtensionNSBezierPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionNSBezierPath.swift; sourceTree = "<group>"; };
+		6616B31D22C9546F002F3D4A /* ExtensionNSAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionNSAttributedString.swift; sourceTree = "<group>"; };
+		6616B31F22C954B9002F3D4A /* ColorButtonTextLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorButtonTextLayer.swift; sourceTree = "<group>"; };
+		6616B32222C95627002F3D4A /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		6616B32422C95647002F3D4A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		6616B32522C95647002F3D4A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6616B32C22C956EA002F3D4A /* ColorButton-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ColorButton-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6616B32E22C956EA002F3D4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6616B33022C956EC002F3D4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6616B33322C956EC002F3D4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		6616B33522C956EC002F3D4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6616B33622C956EC002F3D4A /* ColorButton_App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ColorButton_App.entitlements; sourceTree = "<group>"; };
+		86244D45CB04BE37294F66DE /* Pods-ColorButton-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorButton-App.release.xcconfig"; path = "Target Support Files/Pods-ColorButton-App/Pods-ColorButton-App.release.xcconfig"; sourceTree = "<group>"; };
 		A997FCDB8C0E178ACC4AEACD /* Pods_ColorButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColorButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -33,6 +65,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6616B32922C956EA002F3D4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCF9A9CC0A875FFD0B1AA63C /* Pods_ColorButton_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -41,6 +81,8 @@
 			children = (
 				0364D6E045782A242E98AD29 /* Pods-ColorButton.debug.xcconfig */,
 				287C603A6BD9D35EF1BB082B /* Pods-ColorButton.release.xcconfig */,
+				01315A5ABBE073896004D5C5 /* Pods-ColorButton-App.debug.xcconfig */,
+				86244D45CB04BE37294F66DE /* Pods-ColorButton-App.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -48,7 +90,11 @@
 		6616B2FF22C9515F002F3D4A = {
 			isa = PBXGroup;
 			children = (
+				6616B32222C95627002F3D4A /* .swiftlint.yml */,
+				6616B32422C95647002F3D4A /* LICENSE */,
+				6616B32522C95647002F3D4A /* README.md */,
 				6616B30B22C9515F002F3D4A /* ColorButton */,
+				6616B32D22C956EA002F3D4A /* ColorButton-App */,
 				6616B30A22C9515F002F3D4A /* Products */,
 				0AE371A2C90EDDACD1C86BB8 /* Pods */,
 				A3A0727BD908AF362D01E279 /* Frameworks */,
@@ -59,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				6616B30922C9515F002F3D4A /* ColorButton.framework */,
+				6616B32C22C956EA002F3D4A /* ColorButton-App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				6616B31422C9519E002F3D4A /* ColorButton.swift */,
+				6616B31F22C954B9002F3D4A /* ColorButtonTextLayer.swift */,
+				6616B31A22C95406002F3D4A /* Extensions */,
 				6616B30C22C9515F002F3D4A /* ColorButton.h */,
 				6616B31622C95276002F3D4A /* ColorButton.podspec */,
 				6616B30D22C9515F002F3D4A /* Info.plist */,
@@ -74,10 +123,33 @@
 			path = ColorButton;
 			sourceTree = "<group>";
 		};
+		6616B31A22C95406002F3D4A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6616B31822C953F9002F3D4A /* ExtensionReactive.swift */,
+				6616B31B22C95448002F3D4A /* ExtensionNSBezierPath.swift */,
+				6616B31D22C9546F002F3D4A /* ExtensionNSAttributedString.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		6616B32D22C956EA002F3D4A /* ColorButton-App */ = {
+			isa = PBXGroup;
+			children = (
+				6616B32E22C956EA002F3D4A /* AppDelegate.swift */,
+				6616B33022C956EC002F3D4A /* Assets.xcassets */,
+				6616B33222C956EC002F3D4A /* MainMenu.xib */,
+				6616B33522C956EC002F3D4A /* Info.plist */,
+				6616B33622C956EC002F3D4A /* ColorButton_App.entitlements */,
+			);
+			path = "ColorButton-App";
+			sourceTree = "<group>";
+		};
 		A3A0727BD908AF362D01E279 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				A997FCDB8C0E178ACC4AEACD /* Pods_ColorButton.framework */,
+				0F27CBCE1A81F741447A8443 /* Pods_ColorButton_App.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -105,6 +177,7 @@
 				6616B30522C9515F002F3D4A /* Sources */,
 				6616B30622C9515F002F3D4A /* Frameworks */,
 				6616B30722C9515F002F3D4A /* Resources */,
+				6616B32122C95560002F3D4A /* Update version */,
 			);
 			buildRules = (
 			);
@@ -115,18 +188,41 @@
 			productReference = 6616B30922C9515F002F3D4A /* ColorButton.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		6616B32B22C956EA002F3D4A /* ColorButton-App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6616B33722C956EC002F3D4A /* Build configuration list for PBXNativeTarget "ColorButton-App" */;
+			buildPhases = (
+				D21F694150AC094A7BA52075 /* [CP] Check Pods Manifest.lock */,
+				6616B32822C956EA002F3D4A /* Sources */,
+				6616B32922C956EA002F3D4A /* Frameworks */,
+				6616B32A22C956EA002F3D4A /* Resources */,
+				4D1B1AC80CEFFBD6DF0B9F85 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ColorButton-App";
+			productName = "ColorButton-App";
+			productReference = 6616B32C22C956EA002F3D4A /* ColorButton-App.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		6616B30022C9515F002F3D4A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Robert Hahn";
 				TargetAttributes = {
 					6616B30822C9515F002F3D4A = {
 						CreatedOnToolsVersion = 10.2.1;
 						LastSwiftMigration = 1020;
+					};
+					6616B32B22C956EA002F3D4A = {
+						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
 			};
@@ -136,6 +232,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 6616B2FF22C9515F002F3D4A;
 			productRefGroup = 6616B30A22C9515F002F3D4A /* Products */;
@@ -143,6 +240,7 @@
 			projectRoot = "";
 			targets = (
 				6616B30822C9515F002F3D4A /* ColorButton */,
+				6616B32B22C956EA002F3D4A /* ColorButton-App */,
 			);
 		};
 /* End PBXProject section */
@@ -152,13 +250,60 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6616B32622C95647002F3D4A /* LICENSE in Resources */,
+				6616B32322C95627002F3D4A /* .swiftlint.yml in Resources */,
+				6616B32722C95647002F3D4A /* README.md in Resources */,
 				6616B31722C95276002F3D4A /* ColorButton.podspec in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6616B32A22C956EA002F3D4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6616B33122C956EC002F3D4A /* Assets.xcassets in Resources */,
+				6616B33422C956EC002F3D4A /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4D1B1AC80CEFFBD6DF0B9F85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ColorButton-App/Pods-ColorButton-App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ColorButton-App/Pods-ColorButton-App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ColorButton-App/Pods-ColorButton-App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6616B32122C95560002F3D4A /* Update version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Update version";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$SRCROOT/Scripts/update_version_numbers.sh\n";
+		};
 		AC775F2BB35BCDE857DD68CC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -181,6 +326,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D21F694150AC094A7BA52075 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ColorButton-App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -188,11 +355,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6616B31922C953F9002F3D4A /* ExtensionReactive.swift in Sources */,
+				6616B32022C954B9002F3D4A /* ColorButtonTextLayer.swift in Sources */,
 				6616B31522C9519E002F3D4A /* ColorButton.swift in Sources */,
+				6616B31C22C95448002F3D4A /* ExtensionNSBezierPath.swift in Sources */,
+				6616B31E22C9546F002F3D4A /* ExtensionNSAttributedString.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6616B32822C956EA002F3D4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6616B32F22C956EA002F3D4A /* AppDelegate.swift in Sources */,
+				6616B34122C9599F002F3D4A /* ColorButtonTextLayer.swift in Sources */,
+				6616B34222C959A3002F3D4A /* ExtensionReactive.swift in Sources */,
+				6616B34022C9599D002F3D4A /* ColorButton.swift in Sources */,
+				6616B34322C959A3002F3D4A /* ExtensionNSBezierPath.swift in Sources */,
+				6616B34422C959A3002F3D4A /* ExtensionNSAttributedString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6616B33222C956EC002F3D4A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6616B33322C956EC002F3D4A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6616B30F22C9515F002F3D4A /* Debug */ = {
@@ -373,6 +568,46 @@
 			};
 			name = Release;
 		};
+		6616B33822C956EC002F3D4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01315A5ABBE073896004D5C5 /* Pods-ColorButton-App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "ColorButton-App/ColorButton_App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = PF8C99TXS7;
+				INFOPLIST_FILE = "ColorButton-App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maschina.ColorButton-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6616B33922C956EC002F3D4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86244D45CB04BE37294F66DE /* Pods-ColorButton-App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "ColorButton-App/ColorButton_App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = PF8C99TXS7;
+				INFOPLIST_FILE = "ColorButton-App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maschina.ColorButton-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -390,6 +625,15 @@
 			buildConfigurations = (
 				6616B31222C9515F002F3D4A /* Debug */,
 				6616B31322C9515F002F3D4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6616B33722C956EC002F3D4A /* Build configuration list for PBXNativeTarget "ColorButton-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6616B33822C956EC002F3D4A /* Debug */,
+				6616B33922C956EC002F3D4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

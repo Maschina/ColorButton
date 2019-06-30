@@ -125,6 +125,7 @@
 				6616B30522C9515F002F3D4A /* Sources */,
 				6616B30622C9515F002F3D4A /* Frameworks */,
 				6616B30722C9515F002F3D4A /* Resources */,
+				6616B32122C95560002F3D4A /* Update version */,
 			);
 			buildRules = (
 			);
@@ -179,6 +180,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6616B32122C95560002F3D4A /* Update version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Update version";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$SRCROOT/Scripts/update_version_numbers.sh\n";
+		};
 		AC775F2BB35BCDE857DD68CC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

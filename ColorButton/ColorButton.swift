@@ -12,7 +12,7 @@ import Bond
 
 
 @IBDesignable
-class SceneButton: NSButton, CALayerDelegate {
+class ColorButton: NSButton, CALayerDelegate {
     
     // MARK: - Public Properties
     
@@ -34,7 +34,7 @@ class SceneButton: NSButton, CALayerDelegate {
     private let backgroundLayer = CAShapeLayer()
     private let backgroundGradientLayer = CAGradientLayer()
     private let mouseoverLayer = CAShapeLayer()
-    private let titleLayer = SceneButtonTextLayer()
+    private let titleLayer = ColorButtonTextLayer()
     
     private var mouseDown = Bool()
     private var mouseOver = Bool() { didSet { updateMouseover() } }
@@ -213,99 +213,5 @@ class SceneButton: NSButton, CALayerDelegate {
     
     override public var focusRingMaskBounds: NSRect {
         return bounds.insetBy(dx: 1, dy: 1)
-    }
-}
-
-
-class SceneButtonTextLayer: CATextLayer {
-    public var hasAttributedTitle: Bool {
-        return ((self.string as? NSAttributedString) != nil)
-    }
-    
-    override open func draw(in ctx: CGContext) {
-        let yDiff: CGFloat
-        let fontSize: CGFloat
-        let height = self.bounds.height
-        
-        if let attributedString = self.string as? NSAttributedString {
-            fontSize = attributedString.size().height
-            yDiff = (height-fontSize)/2
-        } else {
-            fontSize = self.fontSize
-            yDiff = (height-fontSize)/2 - fontSize/10
-        }
-        
-        ctx.saveGState()
-        ctx.translateBy(x: 0.0, y: yDiff)
-        super.draw(in: ctx)
-        ctx.restoreGState()
-    }
-}
-
-
-extension ReactiveExtensions where Base: SceneButton {
-    
-    internal var backgroundColors: Bond<[NSColor]> {
-        return bond { $0.backgroundColors = $1 }
-    }
-}
-
-
-extension NSAttributedString {
-    func changeForeColor(color: NSColor) -> NSAttributedString {
-        let attrString = NSMutableAttributedString(attributedString: self)
-        attrString.addAttribute(NSAttributedString.Key.foregroundColor, value: color, range: NSRange(location: 0, length: self.string.count))
-        return attrString
-    }
-    
-    func removeForeColor() -> NSAttributedString {
-        let attrString = NSMutableAttributedString(attributedString: self)
-        attrString.removeAttribute(NSAttributedString.Key.foregroundColor, range: NSRange(location: 0, length: self.string.count))
-        return attrString
-    }
-    
-    func getForeColor() -> NSColor? {
-        guard let color = self.attribute(NSAttributedString.Key.foregroundColor, at: 0, effectiveRange: nil) as? NSColor else { return nil }
-        return color
-    }
-}
-
-
-extension NSBezierPath {
-    var cgPath: CGPath {
-        return self.transformToCGPath()
-    }
-    
-    /// Transforms the NSBezierPath into a CGPathRef
-    ///
-    /// - Returns: The transformed NSBezierPath
-    private func transformToCGPath() -> CGPath {
-        // Create path
-        let path = CGMutablePath()
-        let points = UnsafeMutablePointer<NSPoint>.allocate(capacity: 3)
-        let numElements = self.elementCount
-        
-        if numElements > 0 {
-            for index in 0..<numElements {
-                
-                let pathType = self.element(at: index, associatedPoints: points)
-                
-                switch pathType {
-                    
-                case .moveTo:
-                    path.move(to: points[0])
-                case .lineTo:
-                    path.addLine(to: points[0])
-                case .curveTo:
-                    path.addCurve(to: points[2], control1: points[0], control2: points[1])
-                case .closePath:
-                    path.closeSubpath()
-                @unknown default:
-                    continue
-                }
-            }
-        }
-        points.deallocate()
-        return path
     }
 }

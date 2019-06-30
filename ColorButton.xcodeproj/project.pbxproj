@@ -11,6 +11,10 @@
 		6616B30E22C9515F002F3D4A /* ColorButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 6616B30C22C9515F002F3D4A /* ColorButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6616B31522C9519E002F3D4A /* ColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6616B31422C9519E002F3D4A /* ColorButton.swift */; };
 		6616B31722C95276002F3D4A /* ColorButton.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 6616B31622C95276002F3D4A /* ColorButton.podspec */; };
+		6616B31922C953F9002F3D4A /* ExtensionReactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6616B31822C953F9002F3D4A /* ExtensionReactive.swift */; };
+		6616B31C22C95448002F3D4A /* ExtensionNSBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6616B31B22C95448002F3D4A /* ExtensionNSBezierPath.swift */; };
+		6616B31E22C9546F002F3D4A /* ExtensionNSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6616B31D22C9546F002F3D4A /* ExtensionNSAttributedString.swift */; };
+		6616B32022C954B9002F3D4A /* ColorButtonTextLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6616B31F22C954B9002F3D4A /* ColorButtonTextLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,10 @@
 		6616B30D22C9515F002F3D4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6616B31422C9519E002F3D4A /* ColorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorButton.swift; sourceTree = "<group>"; };
 		6616B31622C95276002F3D4A /* ColorButton.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ColorButton.podspec; sourceTree = SOURCE_ROOT; };
+		6616B31822C953F9002F3D4A /* ExtensionReactive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionReactive.swift; sourceTree = "<group>"; };
+		6616B31B22C95448002F3D4A /* ExtensionNSBezierPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionNSBezierPath.swift; sourceTree = "<group>"; };
+		6616B31D22C9546F002F3D4A /* ExtensionNSAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionNSAttributedString.swift; sourceTree = "<group>"; };
+		6616B31F22C954B9002F3D4A /* ColorButtonTextLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorButtonTextLayer.swift; sourceTree = "<group>"; };
 		A997FCDB8C0E178ACC4AEACD /* Pods_ColorButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColorButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -67,11 +75,23 @@
 			isa = PBXGroup;
 			children = (
 				6616B31422C9519E002F3D4A /* ColorButton.swift */,
+				6616B31F22C954B9002F3D4A /* ColorButtonTextLayer.swift */,
+				6616B31A22C95406002F3D4A /* Extensions */,
 				6616B30C22C9515F002F3D4A /* ColorButton.h */,
 				6616B31622C95276002F3D4A /* ColorButton.podspec */,
 				6616B30D22C9515F002F3D4A /* Info.plist */,
 			);
 			path = ColorButton;
+			sourceTree = "<group>";
+		};
+		6616B31A22C95406002F3D4A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6616B31822C953F9002F3D4A /* ExtensionReactive.swift */,
+				6616B31B22C95448002F3D4A /* ExtensionNSBezierPath.swift */,
+				6616B31D22C9546F002F3D4A /* ExtensionNSAttributedString.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		A3A0727BD908AF362D01E279 /* Frameworks */ = {
@@ -188,7 +208,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6616B31922C953F9002F3D4A /* ExtensionReactive.swift in Sources */,
+				6616B32022C954B9002F3D4A /* ColorButtonTextLayer.swift in Sources */,
 				6616B31522C9519E002F3D4A /* ColorButton.swift in Sources */,
+				6616B31C22C95448002F3D4A /* ExtensionNSBezierPath.swift in Sources */,
+				6616B31E22C9546F002F3D4A /* ExtensionNSAttributedString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

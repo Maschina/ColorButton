@@ -6,7 +6,7 @@
 //  Copyright © 2019 Robert Hahn. All rights reserved.
 //
 
-import Foundation
+import Cocoa
 
 
 extension NSBezierPath {

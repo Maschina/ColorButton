@@ -11,7 +11,7 @@ import ReactiveKit
 import Bond
 
 
-extension ReactiveExtensions where Base: SceneButton {
+extension ReactiveExtensions where Base: ColorButton {
     
     internal var backgroundColors: Bond<[NSColor]> {
         return bond { $0.backgroundColors = $1 }

@@ -19,7 +19,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
-        button.backgroundColors = [NSColor.blue, NSColor.red]
+        button.backgroundColors = [NSColor.white, NSColor.yellow]
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

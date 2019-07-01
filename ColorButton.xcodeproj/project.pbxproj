@@ -25,9 +25,35 @@
 		6616B34222C959A3002F3D4A /* ExtensionReactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6616B31822C953F9002F3D4A /* ExtensionReactive.swift */; };
 		6616B34322C959A3002F3D4A /* ExtensionNSBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6616B31B22C95448002F3D4A /* ExtensionNSBezierPath.swift */; };
 		6616B34422C959A3002F3D4A /* ExtensionNSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6616B31D22C9546F002F3D4A /* ExtensionNSAttributedString.swift */; };
+		666BC5BD22CA5A37008DC014 /* ColorButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6616B30922C9515F002F3D4A /* ColorButton.framework */; };
+		666BC5BE22CA5A37008DC014 /* ColorButton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6616B30922C9515F002F3D4A /* ColorButton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		66D9A9B822C9ECD0005C52BF /* ColorButton.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 66D9A9B722C9ECD0005C52BF /* ColorButton.podspec */; };
 		DCF9A9CC0A875FFD0B1AA63C /* Pods_ColorButton_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F27CBCE1A81F741447A8443 /* Pods_ColorButton_App.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		666BC5BF22CA5A37008DC014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6616B30022C9515F002F3D4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6616B30822C9515F002F3D4A;
+			remoteInfo = ColorButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		666BC5C122CA5A37008DC014 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				666BC5BE22CA5A37008DC014 /* ColorButton.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		01315A5ABBE073896004D5C5 /* Pods-ColorButton-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorButton-App.debug.xcconfig"; path = "Target Support Files/Pods-ColorButton-App/Pods-ColorButton-App.debug.xcconfig"; sourceTree = "<group>"; };
@@ -70,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				666BC5BD22CA5A37008DC014 /* ColorButton.framework in Frameworks */,
 				DCF9A9CC0A875FFD0B1AA63C /* Pods_ColorButton_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,10 +226,12 @@
 				6616B32922C956EA002F3D4A /* Frameworks */,
 				6616B32A22C956EA002F3D4A /* Resources */,
 				4D1B1AC80CEFFBD6DF0B9F85 /* [CP] Embed Pods Frameworks */,
+				666BC5C122CA5A37008DC014 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				666BC5C022CA5A37008DC014 /* PBXTargetDependency */,
 			);
 			name = "ColorButton-App";
 			productName = "ColorButton-App";
@@ -379,6 +408,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		666BC5C022CA5A37008DC014 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6616B30822C9515F002F3D4A /* ColorButton */;
+			targetProxy = 666BC5BF22CA5A37008DC014 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6616B33222C956EC002F3D4A /* MainMenu.xib */ = {
@@ -576,6 +613,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 01315A5ABBE073896004D5C5 /* Pods-ColorButton-App.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "ColorButton-App/ColorButton_App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -596,6 +634,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 86244D45CB04BE37294F66DE /* Pods-ColorButton-App.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "ColorButton-App/ColorButton_App.entitlements";
 				CODE_SIGN_STYLE = Automatic;

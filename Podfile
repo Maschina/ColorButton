@@ -6,6 +6,7 @@ target 'ColorButton' do
   use_frameworks!
 
   # Pods for ColorButton
+  pod 'ReactiveKit'
   pod 'Bond'
 
 end

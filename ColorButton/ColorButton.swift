@@ -12,7 +12,7 @@ import Bond
 
 
 @IBDesignable
-public class ColorButton: NSButton, CALayerDelegate {
+public class ColorButton: NSButton {
     
     // MARK: - Public Properties
     
@@ -36,8 +36,8 @@ public class ColorButton: NSButton, CALayerDelegate {
     private let mouseoverLayer = CAShapeLayer()
     private let titleLayer = ColorButtonTextLayer()
     
-    private var mouseDown = Bool()
-    private var mouseOver = Bool() { didSet { updateMouseover() } }
+    private var isMouseDown = Bool()
+    private var isMouseOver = Bool() { didSet { updateMouseover() } }
     
     private var recentAttrColor: NSColor?
     
@@ -102,6 +102,27 @@ public class ColorButton: NSButton, CALayerDelegate {
         backgroundGradientLayer.colors = backgroundColors.map({ $0.cgColor })
     }
     
+    private func flashBackground() {
+        // Begin the transaction
+        CATransaction.begin()
+        let backgroundFlashAnim = CABasicAnimation(keyPath: "fillColor")
+        backgroundFlashAnim.fromValue = colorBackgroundMouseover.cgColor
+        backgroundFlashAnim.toValue = nil
+        mouseoverLayer.fillColor = nil
+        backgroundFlashAnim.duration = 0
+        backgroundFlashAnim.timeOffset = 0.25
+        backgroundFlashAnim.repeatCount = 2
+        
+        // Callback function
+        CATransaction.setCompletionBlock { [weak self] in
+            self?.mouseoverLayer.fillColor = self?.colorBackgroundMouseover.cgColor
+        }
+        
+        // Do the actual animation and commit the transaction
+        mouseoverLayer.add(backgroundFlashAnim, forKey: "animateFillColor")
+        CATransaction.commit()
+    }
+    
     private func setupMouseover() {
         mouseoverLayer.frame = bounds
         mouseoverLayer.path = mouseoverLinedRect.cgPath
@@ -109,7 +130,7 @@ public class ColorButton: NSButton, CALayerDelegate {
     }
     
     private func updateMouseover() {
-        if mouseOver {
+        if isMouseOver {
             mouseoverLayer.fillColor = colorBackgroundMouseover.cgColor
             
             if titleLayer.hasAttributedTitle {
@@ -179,24 +200,24 @@ public class ColorButton: NSButton, CALayerDelegate {
     // MARK: - Events
     
     override public func mouseDown(with event: NSEvent) {
+        // Mouse down
         if isEnabled {
-            mouseDown = true
+            isMouseDown = true
         }
         super.mouseDown(with: event)
-    }
-    
-    override public func mouseUp(with event: NSEvent) {
-        mouseDown = false
-        super.mouseUp(with: event)
+        
+        // Mouse up
+        isMouseDown = false
+        flashBackground()
     }
     
     override public func mouseEntered(with event: NSEvent) {
-        mouseOver = true
+        isMouseOver = true
         super.mouseEntered(with: event)
     }
     
     override public func mouseExited(with event: NSEvent) {
-        mouseOver = false
+        isMouseOver = false
         super.mouseExited(with: event)
     }
     

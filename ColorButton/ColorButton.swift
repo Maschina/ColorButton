@@ -12,14 +12,14 @@ import Bond
 
 
 @IBDesignable
-class ColorButton: NSButton, CALayerDelegate {
+public class ColorButton: NSButton, CALayerDelegate {
     
     // MARK: - Public Properties
     
     public var backgroundColors = [NSColor]() { didSet { updateBackground() } }
     
-    override var title: String { didSet { updateTitle() } }
-    override var attributedTitle: NSAttributedString { didSet { updateAttributedTitle() } }
+    override public var title: String { didSet { updateTitle() } }
+    override public var attributedTitle: NSAttributedString { didSet { updateAttributedTitle() } }
     
     @IBInspectable public var colorBackgroundMouseover: NSColor = NSColor.selectedMenuItemColor
     @IBInspectable public var colorFont: NSColor = NSColor.controlTextColor
@@ -52,7 +52,7 @@ class ColorButton: NSButton, CALayerDelegate {
         super.init(frame: frame)
     }
     
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         
         // Tracking area
@@ -178,24 +178,24 @@ class ColorButton: NSButton, CALayerDelegate {
     
     // MARK: - Events
     
-    override open func mouseDown(with event: NSEvent) {
+    override public func mouseDown(with event: NSEvent) {
         if isEnabled {
             mouseDown = true
         }
         super.mouseDown(with: event)
     }
     
-    override func mouseUp(with event: NSEvent) {
+    override public func mouseUp(with event: NSEvent) {
         mouseDown = false
         super.mouseUp(with: event)
     }
     
-    override open func mouseEntered(with event: NSEvent) {
+    override public func mouseEntered(with event: NSEvent) {
         mouseOver = true
         super.mouseEntered(with: event)
     }
     
-    override open func mouseExited(with event: NSEvent) {
+    override public func mouseExited(with event: NSEvent) {
         mouseOver = false
         super.mouseExited(with: event)
     }

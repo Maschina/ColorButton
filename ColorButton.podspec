@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ColorButton"
-  spec.version      = "1.0"
+  spec.version      = "1.0.1"
   spec.summary      = "Flat button based on recessed button type for macOS (AppKit) with (gradient) background capability."
 
   # This description is used to generate tags and improve search results.
@@ -117,8 +117,8 @@ Pod::Spec.new do |spec|
   #  the lib prefix of their name.
   #
 
-  # spec.framework  = "SomeFramework"
-  # spec.frameworks = "SomeFramework", "AnotherFramework"
+  spec.framework  = "Bond"
+  # spec.frameworks = "ReactiveKit", "Bond"
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"

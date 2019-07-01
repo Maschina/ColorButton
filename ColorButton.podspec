@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ColorButton"
-  spec.version      = "1.0.5"
+  spec.version      = "1.0.6"
   spec.summary      = "Flat button based on recessed button type for macOS (AppKit) with (gradient) background capability."
 
   # This description is used to generate tags and improve search results.
@@ -118,7 +118,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.framework  = "Bond"
-  spec.frameworks = "ReactiveKit", "Bond"
+  # spec.frameworks = "ReactiveKit", "Bond"
   # spec.vendored_frameworks = 'ReactiveKit', 'Bond'
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
@@ -133,7 +133,8 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
+  spec.dependency "ReactiveKit", "~> 3.13.0"
+  spec.dependency "Bond", "~> 7.6.0"
 
   spec.swift_version = "5.0"
 

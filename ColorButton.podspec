@@ -117,8 +117,8 @@ Pod::Spec.new do |spec|
   #  the lib prefix of their name.
   #
 
-  spec.framework  = "Bond"
-  # spec.frameworks = "ReactiveKit", "Bond"
+  # spec.framework  = "Bond"
+  spec.frameworks = "ReactiveKit", "Bond"
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"

@@ -118,8 +118,8 @@ Pod::Spec.new do |spec|
   #
 
   # spec.framework  = "Bond"
-  spec.frameworks = "ReactiveKit", "Bond"
-
+  # spec.frameworks = "ReactiveKit", "Bond"
+  spec.vendored_frameworks = 'ReactiveKit', 'Bond'
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
 
